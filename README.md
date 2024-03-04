@@ -47,6 +47,8 @@ INSTALL ANDROID STUDIO
 
 
 ##Step 2: Designing the Layout in XML
+
+
 For an adaptive layout, we'll use ConstraintLayout and LinearLayout for their  flexibility and ease of making adaptive UIs. Below is a simplified XML layout to start with. You can enhance it further by looking at the design of the pre-installed calculator app on your device.
 
 xml
