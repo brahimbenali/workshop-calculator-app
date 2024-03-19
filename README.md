@@ -21,17 +21,20 @@ This project involves creating a calculator app for Android devices using XML fo
 sudo snap install android-studio --classic
 ```
 
- ##Step 1: Setting Up Android Studio
+## Step 1: Setting Up Android Studio
 
 1. Download and install the latest version of Android Studio from the Android Developer website.
 2. Start a new project with the "Empty Activity" template, selecting Kotlin as the programming language.
 
 
-	
+### Step 1.1: in case that layout folder doesn't exist :
+
+1. /res/ => mkdir layout
+2. /res/layout => touch activity_main.xml
 
 
 
-##Step 2: Designing the Layout in XML
+## Step 2: Designing the Layout in XML
 
 
 For an adaptive layout, we'll use ConstraintLayout and LinearLayout for their  flexibility and ease of making adaptive UIs. Below is a simplified XML layout to start with. You can enhance it further by looking at the design of the pre-installed calculator app on your device.
