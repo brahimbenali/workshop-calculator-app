@@ -7,29 +7,81 @@
     android:background="@color/black"
     tools:context=".MainActivity">
 
-    <LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
         <TextView
-            <!--here you can control the text and set positions and colors and size-->
-            android:id="@+id/result" />
+            android:id="@+id/result"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_weight="5"
+            android:layout_height="0dp"
+            android:text=""
+            android:padding="10dp"
+            android:textSize="90dp"
+            android:textColor="@color/white"/>
         <LinearLayout
-        <!--here you can control the line and set position -->
-            android:id="@+id/first_line_op">
+            android:id="@+id/first_line_op"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/result">
             <Button
-        <!--here you can control the buttons and set positions and colors and size-->
                 android:id="@+id/delete"
-                android:text="AC"/>
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/grey"
+                android:text="AC"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
             <Button
                 android:id="@+id/sign"
-                android:text="+/-" />
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/grey"
+                android:text="+/-"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/delete"/>
             <Button
                 android:id="@+id/percent"
-                android:text="%" />
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/grey"
+                android:text="%"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/sign" />
             <Button
                 android:id="@+id/division"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/dark_orange"
                 android:text="÷"
-                />
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/percent"/>
 
         </LinearLayout>
+
+    
 
         <LinearLayout
             android:id="@+id/second_line_op">
